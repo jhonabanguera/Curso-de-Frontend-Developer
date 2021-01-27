@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel 1</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+    
+    .carousel{
+        width: 100%;
+        overflow: scroll; /* Permite el scroll*/
+        padding: 30px;
+        position: relative;
+    }
+
+    .carousel__container{
+        white-space: nowrap; /* Evita que los elementos se vayan abajo uno de otros, hace que sigan en la primera linea*/
+        margin: 70px 0px;
+        padding-bottom: 10px;
+    }
+
+    .carousel__item{
+        background: palevioletred;
+        width: 200px;
+        height: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 10px; /* Espacio entre cada una de las cards*/
+        display: inline-block; 
+        cursor: pointer; /* Cambia el cursor al poner el mouse en la card por una mano*/
+        transition: 450ms all;
+        transform-origin: center left;
+    }
+
+    .carousel__item:hover ~ .carousel__item {
+        transform: translate3d(100px, 0, 0); /* Con esto al hacer hover los elementos se desplazan hacia la derecha*/
+    }
+
+    .carousel__container:hover .carousel__item{
+        opacity: 0.3; /* Esto logra que al hacer hover la opacidad de los items disminuya*/
+    }
+
+    .carousel__container:hover .carousel__item:hover{
+        transform: scale(1.5); /* Al hacer hover al item el tamaño de este incrementara*/
+        opacity: 1; /* Al hacer hover al item su opacidad seguira siendo igual*/
+    }
+</style>
+<body>
+    <section class="carousel">
+        <div  class="carousel__container">
+            <div class="carousel__item">
+            </div>
+            <div class="carousel__item">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
