@@ -166,6 +166,16 @@ body {
 
 
 /*----------- Registro---------------*/
+.headerregister {
+    align-items: center;
+    background-color: #21c08b;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+}
 
 .login__container--iniciar {
  text-align: center;
@@ -218,6 +228,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 
 .header__img {
     width: 200px;
@@ -304,8 +315,22 @@ body{
     font-size: 16px;
     height: 50px;
     padding: 0px 20px;
+    /*width: 70%;*/
+    outline: none;
+}
+
+.inputmaquetacion {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 35px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
     width: 70%;
     outline: none;
+    margin-top: 10px;
 }
 
 ::placeholder {
@@ -382,4 +407,74 @@ body {
 
 .carousel-item__details:hover {
     opacity: 1;
+}
+
+/*-------------Not found page---------------*/
+
+.login__message {
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    /* border: 3px solid white; */
+    /* border-radius: 40px; */
+    color: white; 
+    /*padding: 60px 68px 40px;*/
+    /*min-height: 600px;*/
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    font-family: 'Muli' sans-serif;
+    font-size: 100px;
+}
+
+.login__message p {
+color: white;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+margin: 0px;
+}
+
+section h2 {
+    margin: 0px;
+}
+
+
+.wrap {
+  margin: 0px auto;
+  width: 486px;
+}
+
+.box {
+  width: 160px;
+  height: 120px;
+  float: left;
+  background: #347fc3;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.text {
+  text-align: center;
+  margin-top: 56px;
+  color: #fff;
+  font-size: 1.0em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
 }
