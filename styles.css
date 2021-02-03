@@ -394,6 +394,7 @@ body {
 .carousel-item__img {
   width: 200px;
   height: 250px;
+  display: inline-block;
   object-fit: cover;
   /*La imagen recupera su tamaño original*/
 }
