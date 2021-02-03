@@ -360,7 +360,9 @@ body {
   width: 200px;
   height: 250px;
   border-radius: 20px;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  overflow: auto;
+  white-space: nowrap;
   margin-right: 10px;
   /* Espacio entre cada una de las cards*/
   display: inline-block;
