@@ -368,7 +368,10 @@ body {
   width: 200px;
   height: 250px;
   border-radius: 20px;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
   margin-right: 10px;
   /* Espacio entre cada una de las cards*/
   display: inline-block;
@@ -399,6 +402,7 @@ body {
 .carousel-item__img {
   width: 200px;
   height: 250px;
+  display: inline-block;
   object-fit: cover;
   /*La imagen recupera su tamaño original*/
 }
